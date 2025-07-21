@@ -18,10 +18,12 @@
   <body>
     <div class="page-wrapper">
       <!------- Header / Branding ------->
-      <header class="site-header">
-        <img src="img/loreal-logo.png" alt="L'Oréal Logo" class="logo" />
-        <h1 class="site-title">Smart Routine &amp; Product Advisor</h1>
-      </header>
+
+      <div class="header-section">
+        <img src="img/loreal-logo.png" alt="L'Oréal Logo">
+        <h1>Smart Routine &amp; Product Advisor</h1>
+        <div class="subtitle">Your personalized beauty assistant</div>
+      </div>
 
       <!-- Category Filter -->
       <div class="search-section">
@@ -56,19 +58,15 @@
         <h2>Let's Build Your Routine</h2>
         <div id="chatWindow" class="chat-window"></div>
 
-        <form id="chatForm" class="chat-form">
-          <label for="userInput" class="visually-hidden">Message</label>
+        <form id="chatForm">
           <input
-            id="userInput"
-            name="userInput"
             type="text"
-            placeholder="Ask me about products or routines…"
+            id="userInput"
+            placeholder="Type your message..."
             autocomplete="off"
-            required
           />
           <button type="submit" id="sendBtn">
-            <i class="fa-solid fa-paper-plane"></i>
-            <span class="visually-hidden">Send</span>
+            Send
           </button>
         </form>
       </section>
